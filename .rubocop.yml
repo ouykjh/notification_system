@@ -1,0 +1,30 @@
+AllCops:
+  TargetRubyVersion: 2.4.1
+  Exclude:
+    - 'bin/*'
+    - 'lib/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'Guardfile'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'Rakefile'
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Enabled: true
+  Max: 100
+Metrics/MethodLength:
+  Enabled: false
+Rails/ActionFilter:
+  Enabled: false
+SignalException:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+  Enabled: true
+Style/FrozenStringLiteralComment:
+  Enabled: false
