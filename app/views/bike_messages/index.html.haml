@@ -1,0 +1,9 @@
+%table.table
+  %thead
+    %th
+      Bike ID
+    %th
+      Message
+  %tbody
+    - bike_messages.each do |m|
+      = render partial: 'bike_messages_data', locals: { m: m }

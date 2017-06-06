@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'decent_exposure', '3.0.0'
 gem 'jbuilder', '~> 2.5'
 gem 'pg', '~> 0.20'
 gem 'puma', '~> 3.7'
@@ -13,6 +15,7 @@ gem 'redis', '~>3.2'
 gem 'redis-namespace'
 gem 'haml-rails'
 gem 'rufus-scheduler'
+gem 'sass-rails', '>= 3.2'
 gem 'sidekiq'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
