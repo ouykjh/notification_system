@@ -9,7 +9,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'pg', '~> 0.20'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.1'
+gem 'redis', '~>3.2'
+gem 'redis-namespace'
 gem 'haml-rails'
+gem 'rufus-scheduler'
+gem 'sidekiq'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 
@@ -34,6 +38,7 @@ end
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'mock_redis'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 3.1'
 end
