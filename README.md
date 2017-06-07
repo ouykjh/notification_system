@@ -8,10 +8,10 @@ Simple client - server application which simulates sending messages by bike and 
 
 | Name |  Version |
 | :--: | :---: |
-| [Ruby] | 2.4.1 |
-| [Ruby on Rails] | 5.1.1 |
-| [PostgreSQL](http://www.postgresql.org/) | 9.6.2 |
-| [Sidekiq](http://sidekiq.org/) | 5.0.0 |
+| Ruby | 2.4.1 |
+| Ruby on Rails | 5.1.1 |
+| PostgreSQL | 9.6.2 |
+| Sidekiq | 5.0.0 |
 
 ## Project Setup
 
