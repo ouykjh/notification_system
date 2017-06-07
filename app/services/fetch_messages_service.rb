@@ -16,7 +16,7 @@ class FetchMessagesService
   def redis_data(keys)
     redis_entities = []
     keys.each do |key|
-      value =  $social_bike_redis.get(key)
+      value = $social_bike_redis.get(key)
       redis_entities.push(JSON.parse(value)) if valid?(value)
     end
     redis_entities
