@@ -24,6 +24,7 @@ class FetchMessagesService
 
   def valid?(data)
     return unless valid_json?(data)
+    return unless valid_attributes?(JSON.parse(data))
     valid_message_length?(JSON.parse(data)['message'])
   end
 
@@ -32,6 +33,10 @@ class FetchMessagesService
     return true
   rescue JSON::ParserError => e
     return false
+  end
+
+  def valid_attributes?(message)
+    message.key?('message') || message.key?('custom_id')
   end
 
   def valid_message_length?(message)
